@@ -24,7 +24,7 @@ export const AutoComplete: React.FC<Props> = ({
 
     setInput(value);
 
-    if (onInputChange) {
+    if (onInputChange && value.length === 0) {
       onInputChange();
     }
 
